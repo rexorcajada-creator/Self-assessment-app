@@ -1,0 +1,102 @@
+# ---------------------------------------------------------------
+# Build output and tooling
+# ---------------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+coverage/
+playwright-report/
+test-results/
+blob-report/
+.vite/
+*.tsbuildinfo
+*.log
+npm-debug.log*
+
+# Editors / OS
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp
+
+# Secrets and local environment
+.env
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
+
+# ---------------------------------------------------------------
+# PERSONAL / FINANCIAL DATA — must never be committed
+# (CLAUDE.md hard constraints 2 and 4; MASTER_SPEC §7)
+# ---------------------------------------------------------------
+# Folders for any real material kept near the project
+private/
+personal/
+real-data/
+my-documents/
+uploads/
+exports/
+backups/
+downloads/
+
+# Encrypted backups and app exports
+*.sabackup
+*.sa-backup
+*.backup
+*.bak
+*.enc
+*.encrypted
+*-backup.json
+*-export.json
+filing-guide*.pdf
+
+# Bank and accounting exports
+*.csv
+*.tsv
+*.ofx
+*.qfx
+*.qif
+*.xls
+*.xlsx
+*.xlsm
+*.ods
+*.numbers
+
+# Documents, scans and screenshots (P60/P45, receipts, statements)
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.webp
+*.heic
+*.heif
+*.gif
+*.tif
+*.tiff
+*.bmp
+*.doc
+*.docx
+*.pages
+
+# Archives that might contain any of the above
+*.zip
+*.7z
+*.rar
+*.tar
+*.tar.gz
+*.tgz
+
+# ---------------------------------------------------------------
+# Allowed exceptions: SYNTHETIC fixtures and public app assets only.
+# Every file here must be fabricated test data (see the README in each).
+# ---------------------------------------------------------------
+!src/test/fixtures/
+!src/test/fixtures/**
+!e2e/fixtures/
+!e2e/fixtures/**
+!public/icons/
+!public/icons/**

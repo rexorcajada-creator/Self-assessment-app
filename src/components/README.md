@@ -1,5 +1,4 @@
 # components
 
-Shared accessible UI components.
-
-Planned for phase P1. Empty in P0.
+Shared, accessible UI building blocks (status views, synthetic-demo labels,
+error boundary). Feature-specific screens live in `src/features/<area>/`.

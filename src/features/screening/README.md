@@ -2,4 +2,4 @@
 
 Yes/no screening questions that flag unsupported tax situations. Unknown is never treated as zero.
 
-Planned for phase P1. Empty in P0.
+P1: screening questions, unsupported-case flags and the Final questions screen are working; HMRC payment entry is a placeholder.

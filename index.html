@@ -2,14 +2,18 @@
 <html lang="en-GB">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="referrer" content="no-referrer" />
     <meta name="robots" content="noindex, nofollow" />
-    <!-- Empty icon so the browser makes no extra favicon request. -->
-    <link rel="icon" href="data:," />
+    <meta name="description" content="Local-only helper for a UK Self Assessment 2025–26 estimate." />
+    <meta name="theme-color" content="#0b5cad" />
+    <!-- Same-origin assets only. A Content-Security-Policy is added to production builds (vite.config.ts). -->
+    <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="./manifest.webmanifest" />
     <title>Self Assessment Assistant 2025–26</title>
   </head>
   <body>
+    <noscript>This app needs JavaScript. It runs entirely in your browser.</noscript>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

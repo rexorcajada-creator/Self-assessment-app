@@ -2,4 +2,4 @@
 
 Local upload, Blob storage, PDF.js text extraction and locally bundled Tesseract OCR. No cloud OCR, no CDN assets.
 
-Planned for phase P2–P3. Empty in P0.
+P1: Upload and Check extracted figures screens are layouts only. Storage arrives in P2, extraction in P3.

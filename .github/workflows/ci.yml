@@ -22,3 +22,16 @@ jobs:
       - run: npm run lint
       - run: npm run test
       - run: npm run build
+
+  e2e:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-node@v5
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      # Browser binary comes from Playwright's own download host (CI only, never at app runtime).
+      - run: npx playwright install --with-deps chromium
+      - run: npm run test:e2e

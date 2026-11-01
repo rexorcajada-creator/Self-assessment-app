@@ -1,9 +1,10 @@
-/** Conspicuous notice that this build is a development scaffold. */
+/** Conspicuous notice that this build is a development preview. */
 export function DevBanner() {
   return (
-    <div className="dev-banner" role="note">
-      <strong>Development scaffold (P0).</strong> Nothing is stored or calculated yet. Do not enter
-      real personal or financial information.
+    <div className="dev-banner" role="note" aria-label="Development preview">
+      <strong>Development preview (P1).</strong> These screens are layouts only. Nothing is uploaded,
+      read or calculated yet, and every money amount shown is SYNTHETIC DEMO data. Do not enter real
+      personal or financial information.
     </div>
   );
 }

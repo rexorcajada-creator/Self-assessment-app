@@ -2,4 +2,4 @@
 
 Bank CSV column mapper and tested format adapters. No bank APIs.
 
-Planned for phase P4. Empty in P0.
+Planned for phase P4. Empty in P1.

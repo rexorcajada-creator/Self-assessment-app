@@ -123,3 +123,14 @@ test('touch targets for main actions are at least 44px tall', async ({ page }) =
     expect(box?.height ?? 0).toBeGreaterThanOrEqual(44);
   }
 });
+
+test('stays in the readable light look even when the device is in dark mode', async ({ page }) => {
+  await page.emulateMedia({ colorScheme: 'dark' });
+  await page.goto('./');
+  const colours = await page.evaluate(() => {
+    const style = getComputedStyle(document.body);
+    return { background: style.backgroundColor, text: getComputedStyle(document.querySelector('#page-heading') ?? document.body).color };
+  });
+  expect(colours.background).toBe('rgb(246, 247, 249)');
+  expect(colours.text).toBe('rgb(22, 25, 29)');
+});
